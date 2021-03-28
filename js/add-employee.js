@@ -4,7 +4,7 @@ window.addEventListener('load', init);
 let width = 800;
 let height = 700;
 // RESIZE THE POPUP TO THE SET WIDTH AND HEIGHT
-
+window.resizeTo(width, height);
 // MOVE THE POPUP TO THE MIDDLE OF THE SCREEN
 
 // CREATE A HELPER FUNCTION TO RETRIEVE THE HTML ELEMENTS FROM THE DOM
