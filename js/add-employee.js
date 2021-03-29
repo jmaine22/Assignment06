@@ -6,11 +6,21 @@ let height = 700;
 // RESIZE THE POPUP TO THE SET WIDTH AND HEIGHT
 window.resizeTo(width, height);
 // MOVE THE POPUP TO THE MIDDLE OF THE SCREEN
-
+window.moveTo(500, 100);
 // CREATE A HELPER FUNCTION TO RETRIEVE THE HTML ELEMENTS FROM THE DOM
-
+function init() {
+    let myID = document.getElementById('id');
+    let myName = document.getElementById('name');
+    let myExtension = document.getElementById('extension');
+    let myEmail = document.getElementById('email');
+    let myDepartment = document.getElementById('department');
+    let mySubmit = document.getElementById('submit');
+    let myCancel = document.getElementById('cancel');
+}
 // HANDLE THE CANCEL BUTTON. WHEN THE USER CLICKS THIS BUTTON, CLOSE THE WINDOW
-
+myCancel.addEventListener('click', function () {
+    window.close();
+});
 // HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
 
 // CREATE 5 VARIABLES FOR ID, NAME, EXT, EMAIL, AND DEPT
