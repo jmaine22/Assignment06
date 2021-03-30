@@ -16,11 +16,11 @@ function init() {
     let myDepartment = document.getElementById('department');
     let mySubmit = document.getElementById('submit');
     let myCancel = document.getElementById('cancel');
+    // HANDLE THE CANCEL BUTTON. WHEN THE USER CLICKS THIS BUTTON, CLOSE THE WINDOW
+    myCancel.addEventListener('click', function () {
+        window.close();
+    });
 }
-// HANDLE THE CANCEL BUTTON. WHEN THE USER CLICKS THIS BUTTON, CLOSE THE WINDOW
-myCancel.addEventListener('click', function () {
-    window.close();
-});
 // HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
 
 // CREATE 5 VARIABLES FOR ID, NAME, EXT, EMAIL, AND DEPT
@@ -32,4 +32,4 @@ myCancel.addEventListener('click', function () {
 
 // CLOSE THE POPUP
 
-// THE DATA SHOULD SHOW ON THE INDEX.HTML PAGE
+// THE DATA SHOULD SHOW ON THE INDEX.HTML PAGE 
