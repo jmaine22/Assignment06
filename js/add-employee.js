@@ -20,6 +20,9 @@ function init() {
     myCancel.addEventListener('click', function () {
         window.close();
     });
+    mySubmit.addEventListener('click', function (e) {
+        e.preventDefault();
+    });
 }
 // HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
 
