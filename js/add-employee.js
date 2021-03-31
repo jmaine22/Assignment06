@@ -30,6 +30,7 @@ function init() {
     myDepartment = department.options[department.selectedIndex].text;
     console.log(myID);
 }
+
 // HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
 
 // CREATE 5 VARIABLES FOR ID, NAME, EXT, EMAIL, AND DEPT
