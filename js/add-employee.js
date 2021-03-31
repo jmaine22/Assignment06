@@ -13,7 +13,7 @@ function init() {
     let myName = document.getElementById('name');
     let myExtension = document.getElementById('extension');
     let myEmail = document.getElementById('email');
-    let myDepartment = document.getElementById('department');
+    let myDepartment = document.getElementById('department').value;
     let mySubmit = document.getElementById('submit');
     let myCancel = document.getElementById('cancel');
     // HANDLE THE CANCEL BUTTON. WHEN THE USER CLICKS THIS BUTTON, CLOSE THE WINDOW
@@ -23,6 +23,12 @@ function init() {
     mySubmit.addEventListener('click', function (e) {
         e.preventDefault();
     });
+    myID = document.getElementById('id').value;
+    myName = document.getElementById('name').value;
+    myExtension = document.getElementById('extension').value;
+    myEmail = document.getElementById('email').value.indexOf('@');
+    myDepartment = department.options[department.selectedIndex].text;
+    console.log(myID);
 }
 // HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
 
