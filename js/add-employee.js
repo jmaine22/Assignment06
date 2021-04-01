@@ -9,28 +9,30 @@ window.resizeTo(width, height);
 window.moveTo(500, 100);
 // CREATE A HELPER FUNCTION TO RETRIEVE THE HTML ELEMENTS FROM THE DOM
 function init() {
-    let myID = document.getElementById('id');
-    let myName = document.getElementById('name');
-    let myExtension = document.getElementById('extension');
-    let myEmail = document.getElementById('email');
-    let myDepartment = document.getElementById('department').value;
-    let mySubmit = document.getElementById('submit');
-    let myCancel = document.getElementById('cancel');
-    // HANDLE THE CANCEL BUTTON. WHEN THE USER CLICKS THIS BUTTON, CLOSE THE WINDOW
-    myCancel.addEventListener('click', function () {
-        window.close();
-    });
-    mySubmit.addEventListener('click', function (e) {
-        e.preventDefault();
-    });
-    myID = document.getElementById('id').value;
-    myName = document.getElementById('name').value;
-    myExtension = document.getElementById('extension').value;
-    myEmail = document.getElementById('email').value.indexOf('@');
-    myDepartment = department.options[department.selectedIndex].text;
-    console.log(myID);
+    document.getElementById('empForm');
+    document.getElementById('id');
+    document.getElementById('name');
+    document.getElementById('extension');
+    document.getElementById('email');
+    document.getElementById('department').value;
 }
-
+document.addEventListener('DOMContentLoaded', () => {
+    let mySubmit = document.getElementById('submit');
+    mySubmit.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+});
+document.addEventListener('DOMContentLoaded', () => {
+    let myCancel = document.getElementById('cancel');
+    myCancel.addEventListener('click', (e) => {
+        window.close();
+    })
+});
+let myID;
+let myName;
+let myExtension;
+let myEmail;
+let myDepartment;
 // HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
 
 // CREATE 5 VARIABLES FOR ID, NAME, EXT, EMAIL, AND DEPT
