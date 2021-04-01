@@ -14,8 +14,9 @@ function init() {
     document.getElementById('name');
     document.getElementById('extension');
     document.getElementById('email');
-    document.getElementById('department').value;
+    document.getElementById('department');
 }
+// HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
 document.addEventListener('DOMContentLoaded', () => {
     let mySubmit = document.getElementById('submit');
     mySubmit.addEventListener('click', (e) => {
@@ -28,16 +29,25 @@ document.addEventListener('DOMContentLoaded', () => {
         window.close();
     })
 });
+// CREATE 5 VARIABLES FOR ID, NAME, EXT, EMAIL, AND DEPT
 let myID;
 let myName;
 let myExtension;
 let myEmail;
 let myDepartment;
-// HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
-
-// CREATE 5 VARIABLES FOR ID, NAME, EXT, EMAIL, AND DEPT
 // SET THOSE VARIABLES TO WHATEVER THE USER ENTERS INTO THE FORM ELEMENTS
-
+document.addEventListener('click', () => {
+    myID = document.getElementById('id').value;
+    console.log(myID);
+    myName = document.getElementById('name').value;
+    console.log(myName);
+    myExtension = document.getElementById('extension').value;
+    console.log(myExtension);
+    myEmail = document.getElementById('email').value;
+    console.log(myEmail);
+    myDepartment = document.getElementById('department').value;
+    console.log(myDepartment);
+});
 // GET THE LOGINDETAILS OUTPUT ELEMENT FROM THE PARENT PAGE
 
 // SET THE TEXT OF THE LOGINDETAILS ELEMENT TO THE ABOVE SET VARIABLES
