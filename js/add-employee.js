@@ -52,8 +52,11 @@ document.addEventListener('click', () => {
 const page = window.open('index.html');
 let loginDetail = document.getElementById('loginDetails');
 // SET THE TEXT OF THE LOGINDETAILS ELEMENT TO THE ABOVE SET VARIABLES
-loginDetail = myID;
-console.log(loginDetail);
+document.addEventListener('submit', () => {
+    loginDetail = myID.value;
+    console.log(loginDetail);
+})
+
 // CLOSE THE POPUP
 
 // THE DATA SHOULD SHOW ON THE INDEX.HTML PAGE 
