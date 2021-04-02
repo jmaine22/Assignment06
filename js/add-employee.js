@@ -49,9 +49,11 @@ document.addEventListener('click', () => {
     console.log(myDepartment);
 });
 // GET THE LOGINDETAILS OUTPUT ELEMENT FROM THE PARENT PAGE
-
+const page = window.open('index.html');
+let loginDetail = document.getElementById('loginDetails');
 // SET THE TEXT OF THE LOGINDETAILS ELEMENT TO THE ABOVE SET VARIABLES
-
+loginDetail = myID;
+console.log(loginDetail);
 // CLOSE THE POPUP
 
 // THE DATA SHOULD SHOW ON THE INDEX.HTML PAGE 
