@@ -6,7 +6,7 @@ function init(){
     let myWindow;
     btn.addEventListener('click', function () {
         console.log('Hello World');
-        myWindow = window.open('','add-employee.html', 'width = 100, height = 100');
+        myWindow = window.open('add-employee.html','','width=400, height=400, resizeable=yes');
         myWindow.resizeTo(250, 250);
     });
 }

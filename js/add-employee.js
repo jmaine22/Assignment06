@@ -36,7 +36,7 @@ let myExtension;
 let myEmail;
 let myDepartment;
 // SET THOSE VARIABLES TO WHATEVER THE USER ENTERS INTO THE FORM ELEMENTS
-document.addEventListener('click', () => {
+let employee = document.addEventListener('click', () => {
     myID = document.getElementById('id').value;
     console.log(myID);
     myName = document.getElementById('name').value;
@@ -53,7 +53,7 @@ let page = window.open('','loginDetail');
 //let loginDetail = document.getElementById('loginDetails');
 // SET THE TEXT OF THE LOGINDETAILS ELEMENT TO THE ABOVE SET VARIABLES
 document.addEventListener('submit', () => {
-    page = myID.value;
+    //page.opener.document.write('<p>Parent Window</p>');
     console.log(page);
 })
 
