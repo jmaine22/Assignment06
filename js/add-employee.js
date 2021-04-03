@@ -49,12 +49,12 @@ document.addEventListener('click', () => {
     console.log(myDepartment);
 });
 // GET THE LOGINDETAILS OUTPUT ELEMENT FROM THE PARENT PAGE
-const page = window.open('index.html');
-let loginDetail = document.getElementById('loginDetails');
+let page = window.open('','loginDetail');
+//let loginDetail = document.getElementById('loginDetails');
 // SET THE TEXT OF THE LOGINDETAILS ELEMENT TO THE ABOVE SET VARIABLES
 document.addEventListener('submit', () => {
-    loginDetail = myID.value;
-    console.log(loginDetail);
+    page = myID.value;
+    console.log(page);
 })
 
 // CLOSE THE POPUP
