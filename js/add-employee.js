@@ -2,6 +2,7 @@
 window.addEventListener('load', init);
 // CREATE A HELPER FUNCTION TO RETRIEVE THE HTML ELEMENTS FROM THE DOM
 function init() {
+    "use strict";
     // SET WIDTH AND HEIGHT VARIABLES TO 800 x 700
     let width = 800;
     let height = 700;
