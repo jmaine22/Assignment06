@@ -1,14 +1,14 @@
 // HANDLE THE LOAD EVENT OF THE WINDOW
 window.addEventListener('load', init);
-// SET WIDTH AND HEIGHT VARIABLES TO 800 x 700
-let width = 800;
-let height = 700;
-// RESIZE THE POPUP TO THE SET WIDTH AND HEIGHT
-window.resizeTo(width, height);
-// MOVE THE POPUP TO THE MIDDLE OF THE SCREEN
-window.moveTo(500, 100);
 // CREATE A HELPER FUNCTION TO RETRIEVE THE HTML ELEMENTS FROM THE DOM
 function init() {
+    // SET WIDTH AND HEIGHT VARIABLES TO 800 x 700
+    let width = 800;
+    let height = 700;
+// RESIZE THE POPUP TO THE SET WIDTH AND HEIGHT
+    window.resizeTo(width, height);
+// MOVE THE POPUP TO THE MIDDLE OF THE SCREEN
+    window.moveTo((window.screen.width - width) / 2, ((window.screen.height - height) / 2));
     document.getElementById('empForm');
     document.getElementById('id');
     document.getElementById('name');
