@@ -54,6 +54,7 @@ employee.addEventListener("click", function() {
     let page = window.opener.document.getElementById('loginDetails');
     console.log(page);
     page.innerHTML = "<br><br>8-Digit Employee ID: " + myID + "<br>Full Name: " + myName + "<br>4-Digit Extension: " + myExtension + "<br>Email: " + myEmail + "<br>Department:" + myDepartment;
+    window.close();
 })
     
 //let loginDetail = document.getElementById('loginDetails');
