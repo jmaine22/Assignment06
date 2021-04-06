@@ -53,7 +53,7 @@ employee.addEventListener("click", function() {
     // GET THE LOGINDETAILS OUTPUT ELEMENT FROM THE PARENT PAGE
     let page = window.opener.document.getElementById('loginDetails');
     console.log(page);
-    page.innerHTML = "<br><br>8-Digit Employee ID" + myID + "<br>Full Name" + myName + "<br>4-Digit Extension" + myExtension + "<br>Email" + myEmail + "<br>Department" + myDepartment;
+    page.innerHTML = "<br><br>8-Digit Employee ID: " + myID + "<br>Full Name: " + myName + "<br>4-Digit Extension: " + myExtension + "<br>Email: " + myEmail + "<br>Department:" + myDepartment;
 })
     
 //let loginDetail = document.getElementById('loginDetails');
